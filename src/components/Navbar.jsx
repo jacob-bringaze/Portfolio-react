@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -7,14 +7,37 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [color, setColor] = useState("transparent");
+  const [textColor, setTextColor] = useState("white");
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor("#000000");
+        setTextColor("#ffffff");
+      } else {
+        setColor("transparent");
+        setTextColor("#ffffff");
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#ffffff00] text-gray-300">
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#ffffff00] text-gray-300"
+    >
       <div>
-        <p className="uppercase font-bold text-2xl">Jbringaze</p>
+        <p
+          style={{ color: `${textColor}` }}
+          className="uppercase font-bold text-2xl"
+        >
+          Jbringaze
+        </p>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul style={{ color: `${textColor}` }} className="hidden md:flex">
         <li>
           <Link
             to="home"
@@ -69,7 +92,11 @@ const Navbar = () => {
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? (
+          <FaBars size={20} style={{ color: `${textColor}` }} />
+        ) : (
+          <FaTimes size={20} style={{ color: `${textColor}` }} />
+        )}
       </div>
 
       {/* Mobile menu */}
