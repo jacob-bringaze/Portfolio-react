@@ -8,7 +8,7 @@ const Contact = () => {
     >
       <form
         method="POST"
-        action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
+        action="https://getform.io/f/3537a870-2fef-450e-a016-75b4e7189309"
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
@@ -38,7 +38,7 @@ const Contact = () => {
           placeholder="Message"
         ></textarea>
         <button className="text-white hover:text-white border-white border-2 hover:bg-[#6fc2b0] hover:border-[#6fc2b0] px-4 py-3 my-8 mx-auto flex items-center">
-          Let's Collaborate
+          Send Message
         </button>
       </form>
     </div>

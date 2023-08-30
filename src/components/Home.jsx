@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Typed from "react-typed";
 import Bg from "../assets/bg1.jpg";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -31,14 +32,14 @@ const Home = () => {
           designing) exceptional digital experiences. Currently, I’m focused on
           building responsive full-stack web applications.
         </p>
-        <div>
+        <Link to="work">
           <button className="text-white border-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#6fc2b0] hover:border-[#6fc2b0] hover:text-white">
             View Work
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3 " />
             </span>
           </button>
-        </div>
+        </Link>
       </div>
     </div>
   );

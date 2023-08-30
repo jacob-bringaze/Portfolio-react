@@ -4,11 +4,10 @@
       "path": "../.."
     },
     {
-      "path": "../../../slider"
+      "path": "../../../littlelemon-react"
     },
     {
-      "path": "../../../wonderland-react-tailwind"
+      "path": "../../../slider"
     }
-  ],
-  "settings": {}
+  ]
 }
