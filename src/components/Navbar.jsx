@@ -14,8 +14,8 @@ const Navbar = () => {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("#000000");
-        setTextColor("#ffffff");
+        setColor("#ffffff");
+        setTextColor("#000000");
       } else {
         setColor("transparent");
         setTextColor("#ffffff");
@@ -44,7 +44,7 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] hover:font-bold"
+            className="hover:text-[#6fc2b0] font-bold"
           >
             Home
           </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] hover:font-bold"
+            className="hover:text-[#6fc2b0] font-bold"
           >
             About
           </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
             to="skills"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] hover:font-bold"
+            className="hover:text-[#6fc2b0] font-bold"
           >
             Skills
           </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
             to="work"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] hover:font-bold"
+            className="hover:text-[#6fc2b0] font-bold"
           >
             Work
           </Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0]"
+            className="hover:text-[#6fc2b0] font-bold"
           >
             Contact
           </Link>

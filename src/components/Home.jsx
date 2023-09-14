@@ -21,18 +21,18 @@ const Home = () => {
         <div className="md:text-6xl text-3xl font-bold text-[#bbbcbd]">
           <Typed
             className="md:text-6xl text-3xl font-bold text-[#6fc2b0]"
-            strings={["Front End Developer."]}
+            strings={["Software Developer."]}
             typeSpeed={120}
             backSpeed={80}
             loop
           />
         </div>
         <p className="text-white py-4 max-w-[700px]">
-          I’m a Front End developer specializing in building (and occasionally
+          I’m a Software Developer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
           building responsive full-stack web applications.
         </p>
-        <Link to="work">
+        <Link to="work" smooth={true} duration={500} className="w-[175px]">
           <button className="text-white border-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#6fc2b0] hover:border-[#6fc2b0] hover:text-white">
             View Work
             <span className="group-hover:rotate-90 duration-300">

@@ -2,18 +2,17 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#000000] text-white">
+    <div name="about" className="w-full h-screen bg-[#FFFFFF] text-black">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[900px] w-full grid grid-cols-2 gap-8">
           <div className="text-left py-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-[#6fc2b0]">
+            <p className="md:text-5xl font-bold inline border-b-4 border-[#6fc2b0]">
               About
             </p>
           </div>
-          <div></div>
         </div>
-        <div className="max-w-[900px] w-full grid sm:grid-cols-1 gap-8 px-4">
-          <div className="text-left text-2xl sm:text-lg font-bold">
+        <div className="max-w-[900px] w-full grid sm:grid-cols-1 gap-5 px-4">
+          <div className="text-left sm:text-xl md:text-2xl font-bold">
             <p>
               Hi. I'm Jacob Bringaze, nice to meet you. Please take a look
               around.
@@ -21,7 +20,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              Passionate Front End Developer with a keen eye for design and a
+              Passionate Software Developer with a keen eye for design and a
               deep appreciation for crafting seamless user experiences. With a
               solid foundation in web development and a specialization in front
               end technologies, I thrive on bringing designs to life and

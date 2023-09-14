@@ -7,24 +7,25 @@ const Projects = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#000000]">
+    <div name="work" className="w-full md:h-screen text-black bg-[#FFFFFF]">
       <div className="max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#6fc2b0]">
+          <p className="text-5xl font-bold inline border-b-4 border-[#6fc2b0]">
             Work
           </p>
-          <p className="py-6">Check out some of my projects</p>
+          <p className="py-6 text-lg font-bold">
+            Check out some of my projects.
+          </p>
         </div>
 
         {/* container for projects */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4 px-5">
+        <div className="grid md:grid-cols-2 gap-4">
           {/* Gird Item */}
           {project.map((item, index) => (
             <div
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
-              className="shadow-lg shadow-[#313131] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div"
+              className="shadow-lg shadow-[#313131] group container flex justify-center text-center items-center mx-auto content-div"
             >
               {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100">

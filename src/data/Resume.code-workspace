@@ -8,6 +8,18 @@
     },
     {
       "path": "../../../slider"
+    },
+    {
+      "path": "../../../wonderland-react-tailwind"
+    },
+    {
+      "path": "../../../crypto-react"
+    },
+    {
+      "path": "../../../spacex-clone"
+    },
+    {
+      "path": "../../../space-x-clone"
     }
   ]
 }
