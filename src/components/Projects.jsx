@@ -7,13 +7,16 @@ const Projects = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full md:h-screen text-black bg-[#FFFFFF]">
-      <div className="max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-5xl font-bold inline border-b-4 border-[#6fc2b0]">
+    <div
+      name="work"
+      className="w-full md:h-screen text-black bg-[#FFFFFF] my-10"
+    >
+      <div className="max-w-[900px] mx-auto flex overflow-hidden flex-col p-4 justify-center">
+        <div>
+          <p className="md:text-5xl text-3xl font-bold inline border-b-4 border-[#6fc2b0]">
             Work
           </p>
-          <p className="py-6 text-lg font-bold">
+          <p className="py-6 text-md font-semi-bold">
             Check out some of my projects.
           </p>
         </div>
@@ -25,11 +28,11 @@ const Projects = () => {
             <div
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
-              className="shadow-lg shadow-[#313131] group container flex justify-center text-center items-center mx-auto content-div"
+              className="shadow-lg shadow-[#313131] group container flex justify-center text-center items-center mx-auto z-10 content-div"
             >
               {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100">
-                <span className="text-2xl font bold text-white tracking-wider ">
+                <span className="text-2xl font bold text-white tracking-wider">
                   {item.name}
                 </span>
                 <div className="pt-8 text-center ">
