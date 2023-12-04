@@ -3,7 +3,7 @@ import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
-import GitHub from "../assets/github-blue.jpg";
+import GitHub from "../assets/github.jpg";
 import Tailwind from "../assets/tailwind.png";
 import Node from "../assets/node.png";
 import Firebase from "../assets/firebase.png";
@@ -14,7 +14,7 @@ const Skills = () => {
     <div name="skills" className="w-full h-screen bg-[#FFFFFF] text-black">
       <div className="max-w-[900px] mx-auto my-10 md:my-0 p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="md:text-5xl text-3xl font-bold inline border-b-4 border-[#6fc2b0]">
+          <p className="md:text-5xl text-3xl font-bold inline border-b-4 border-[#48bcd1]">
             Skills
           </p>
           <p className="py-4 text-md font-semi-bold">

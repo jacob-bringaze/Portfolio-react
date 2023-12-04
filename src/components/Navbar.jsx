@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import Resume from "../assets/Jacob-Bringaze-Resume.pdf";
+import Resume from "../assets/Jacob-Bringaze-Resume-10.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,12 +30,14 @@ const Navbar = () => {
       className="fixed w-full h-[80px] flex justify-between z-40 items-center px-4 bg-[#ffffff00] text-gray-300"
     >
       <div>
-        <p
+        <Link
+          to="home"
+          smooth={true}
           style={{ color: `${textColor}` }}
-          className="uppercase font-bold text-2xl"
+          className="uppercase font-bold text-2xl hover:cursor-pointer"
         >
           Jbringaze
-        </p>
+        </Link>
       </div>
 
       <ul style={{ color: `${textColor}` }} className="hidden md:flex">
@@ -44,7 +46,7 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] font-bold"
+            className="hover:text-[#48bcd1] font-bold"
           >
             Home
           </Link>
@@ -54,7 +56,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] font-bold"
+            className="hover:text-[#48bcd1] font-bold"
           >
             About
           </Link>
@@ -64,7 +66,7 @@ const Navbar = () => {
             to="skills"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] font-bold"
+            className="hover:text-[#48bcd1] font-bold"
           >
             Skills
           </Link>
@@ -74,29 +76,25 @@ const Navbar = () => {
             to="work"
             smooth={true}
             duration={500}
-            className="hover:text-[#6fc2b0] font-bold"
+            className="hover:text-[#48bcd1] font-bold"
           >
             Work
           </Link>
         </li>
-        <li>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="hover:text-[#6fc2b0] font-bold"
-          >
-            Contact
-          </Link>
-        </li>
       </ul>
+
+      <Link to="contact" smooth={true} duration={500} className="w-[175px]">
+        <button className="hidden text-white font-bold group rounded-full px-6 py-3 my-2 md:flex items-center bg-[#48bcd1] hover:bg-[#09a8c4]">
+          Contact Me
+        </button>
+      </Link>
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-50">
         {!nav ? (
           <FaBars size={20} style={{ color: `${textColor}` }} />
         ) : (
-          <FaTimes size={20} style={{ color: `${textColor}` }} />
+          <FaTimes size={20} className="text-white" />
         )}
       </div>
 
@@ -105,33 +103,33 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 right-0 w-[100%] h-screen bg-[#417267] flex flex-col justify-center items-center"
+            : "absolute top-0 right-0 w-[100%] h-screen bg-[#000000ee] flex flex-col justify-center items-center"
         }
       >
-        <li className="p-6 text-4xl">
+        <li className="p-6 text-4xl hover:text-[#48bcd1]">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="p-6 text-4xl">
+        <li className="p-6 text-4xl hover:text-[#48bcd1]">
           {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="p-6 text-4xl">
+        <li className="p-6 text-4xl hover:text-[#48bcd1]">
           {" "}
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="p-6 text-4xl">
+        <li className="p-6 text-4xl hover:text-[#48bcd1]">
           {" "}
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className="p-6 text-4xl">
+        <li className="p-6 text-4xl hover:text-[#48bcd1]">
           {" "}
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
@@ -160,7 +158,7 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#b94343]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="mailto:jbringazedev@gmail.com"

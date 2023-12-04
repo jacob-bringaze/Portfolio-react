@@ -16,10 +16,22 @@
       "path": "../../../crypto-react"
     },
     {
-      "path": "../../../spacex-clone"
+      "path": "../../../space-x-clone"
     },
     {
-      "path": "../../../space-x-clone"
+      "path": "../../../space-app"
+    },
+    {
+      "path": "../../../freelance"
+    },
+    {
+      "path": "../../../dash"
+    },
+    {
+      "path": "../../../dash-react"
+    },
+    {
+      "path": "../../../plumbing"
     }
   ]
 }

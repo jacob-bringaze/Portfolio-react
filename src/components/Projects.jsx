@@ -9,11 +9,11 @@ const Projects = () => {
   return (
     <div
       name="work"
-      className="w-full md:h-screen text-black bg-[#FFFFFF] my-10"
+      className="w-full md:h-screen text-black bg-[#FFFFFF] md:my-0 my-10"
     >
       <div className="max-w-[900px] mx-auto flex overflow-hidden flex-col p-4 justify-center">
         <div>
-          <p className="md:text-5xl text-3xl font-bold inline border-b-4 border-[#6fc2b0]">
+          <p className="md:text-5xl text-3xl font-bold inline border-b-4 border-[#48bcd1]">
             Work
           </p>
           <p className="py-6 text-md font-semi-bold">
